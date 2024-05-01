@@ -17,6 +17,7 @@ const RecipeDetails = async ({ recipeDetails }) => {
 
     const socialUrl = `https://lws-assignment-m-8.vercel.app/${name.split(' ').join('')}/${id}`
 
+
     return (
         <>
             <section>
