@@ -10,6 +10,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Khana Khazana",
   description: "Khana Khazana app here you will find food recipe",
+  openGraph: {
+    images: [
+      {
+        url: "https://lws-assignment-m-8.vercel.app/api/og",
+        width: 900,
+        height: 400,
+      },
+    ],
+  },
 };
 
 export default async function RootLayout({ children }) {

@@ -6,6 +6,15 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const category = getCategoryById(params.categoryID);
   return {
     title: `Khana Khazana - ${category.categoryName}`,
+    openGraph: {
+      images: [
+        {
+          url: `https://lws-assignment-m-8.vercel.app/api/og?title=Khana Khazana - ${category.categoryName}`,
+          width: 900,
+          height: 400,
+        },
+      ],
+    },
   };
 }
 
