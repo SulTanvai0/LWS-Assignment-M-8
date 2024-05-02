@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 const UserInfo = () => {
 
     const { auth, setAuth } = useAuth();
+
     const pathname = usePathname()
 
     const handelLogOut = () => {

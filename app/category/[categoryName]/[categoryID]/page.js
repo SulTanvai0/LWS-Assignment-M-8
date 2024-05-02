@@ -25,7 +25,7 @@ const categoryPage = async ({ params }) => {
 
   return (
     <>
-      <CategorizedList recipes={recipes} />
+      <CategorizedList recipes={recipes} category={category.categoryName} />
     </>
   );
 };
